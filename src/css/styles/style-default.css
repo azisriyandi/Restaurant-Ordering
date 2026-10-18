@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #1E4D40;
+    --primary-hover: #15382E;
+    --accent-color: #E67E22;
+    /* Background Colors */
+    --bg-color: #F8F6F0;
+    --card-bg: #FFFFFF;
+    /* Text Colors */
+    --text-color: #1A1A1A;
+    --text-secondary: #555555;
+    --text-light: #FFFFFF;
+    /* Border & Separator */
+    --border-color: #E2DFD7;
+    --shadow-color: rgba(0, 0, 0, 0.06);
+    /* Radius & Spacing */
+    --btn-radius: 8px;
+    --badge-radius: 50%;
+    --transition: all 0.2s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+/* Navigation */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.judul-navigation {
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.judul-icon-nav {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 32px;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 35px;
+    text-align: center;
+}
+
+.judul-text-nav {
+    font-size: 32px;
+    color: var(--primary-color);
+}
+
+.nav-info {
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-info:hover {
+    color: var(--primary-hover);
+    text-decoration: underline var(--accent-color);
+}
+
+.navigation-cmb {
+    display: flex;
+    gap: 20px;
+}

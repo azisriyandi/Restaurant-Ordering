@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk</title>
+    <link rel="stylesheet" href="src/css/styles/auth.css">
+</head>
+
+<body>
+    <main class="card">
+        <div id="auth-view">
+            <h1>Masuk</h1>
+
+            <form id="login-form">
+                <label>Email
+                    <input type="email" name="email" autocomplete="email" required>
+                </label>
+
+                <label>Password
+                    <input type="password" name="password" autocomplete="current-password" required>
+                </label>
+
+                <p class="msg" hidden></p>
+
+                <button type="submit">Masuk</button>
+                <button type="button" id="forgot-link" class="link">Lupa password?</button>
+            </form>
+
+            <form id="forgot-form" hidden>
+                <p>Masukkan email akunmu. Kami kirim link untuk membuat password baru.</p>
+
+                <label>Email
+                    <input type="email" name="email" autocomplete="email" required>
+                </label>
+
+                <p class="msg" hidden></p>
+
+                <button type="submit">Kirim link reset</button>
+                <button type="button" id="back-link" class="link">Kembali ke Masuk</button>
+            </form>
+
+            <h2>Daftar</h2>
+
+            <form id="register-form">
+                <label>Nama lengkap
+                    <input type="text" name="full_name" autocomplete="name" required>
+                </label>
+
+                <label>Email
+                    <input type="email" name="email" autocomplete="email" required>
+                </label>
+
+                <label>Password
+                    <input type="password" name="password" minlength="8" autocomplete="new-password" required>
+                </label>
+
+                <p class="msg" hidden></p>
+
+                <button type="submit">Buat akun</button>
+            </form>
+        </div>
+
+        <div id="reset-view" hidden>
+            <h1>Password baru</h1>
+
+            <form id="reset-form">
+                <label>Password baru
+                    <input type="password" name="password" minlength="8" autocomplete="new-password" required>
+                </label>
+
+                <p class="msg" hidden></p>
+
+                <button type="submit">Simpan password</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+    <script src="src/js/supabase-client.js"></script>
+    <script src="src/js/auth.js"></script>
+</body>
+
+</html>
